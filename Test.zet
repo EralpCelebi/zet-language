@@ -1,0 +1,21 @@
+[attribute(variable)]
+fn printf(str) -> void;
+
+fn malloc(i8) -> i8*;
+
+struct car
+{
+    str name;
+}
+
+fn (car*) drive () -> void
+{
+    this.name = "poop";
+}
+
+fn main() -> void
+{
+    car* poop = malloc(16) to car*;
+    poop.drive();
+    printf("poop: %s", *poop.name);
+}
