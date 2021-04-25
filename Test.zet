@@ -10,12 +10,12 @@ struct car
 
 fn (car*) drive () -> void
 {
-    this.name = "poop";
+    this.name = "tofaş";
 }
 
 fn main() -> void
 {
-    car* poop = malloc(16) to car*;
-    poop.drive();
-    printf("poop: %s", *poop.name);
+    car* araba = malloc(16) to car*;
+    araba.drive();
+    printf("araba: %s", *araba.name);
 }
